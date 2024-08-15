@@ -1,0 +1,159 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+  }
+  
+  main {
+    flex-grow: 1;
+  }
+  
+  .card-items {
+    background-color: #f3f4f6;
+    padding: 3rem 0;
+  }
+  
+  .card-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1rem;
+  }
+  
+  .card-item {
+    background-color: white;
+    border-radius: 0.5rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 1.5rem;
+  }
+  
+  .card-item h3 {
+    font-size: 1.25rem;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+  }
+  
+  .card-item p {
+    color: #4b5563;
+  }
+  
+  footer {
+    background-color: #1f2937;
+    color: white;
+    padding: 1rem 0;
+  }
+  
+  .footer-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+  }
+  
+  nav {
+    background-color: white;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+    padding: 1rem 0;
+  }
+  
+  .menu-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .menu-content a {
+    color: black;
+    text-decoration: none;
+    font-weight: 600;
+    margin: 0 1rem;
+  }
+  
+  .menu-content a:hover {
+    color: #4b5563;
+  }
+  
+  .teaser {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 1200px;
+    margin: 3rem auto;
+    padding: 0 1rem;
+  }
+  
+  @media (min-width: 768px) {
+    .teaser {
+      flex-direction: row;
+      justify-content: space-between;
+    }
+  }
+  
+  .teaser-image {
+    width: 100%;
+    height: 300px;
+    position: relative;
+    margin-bottom: 2rem;
+  }
+  
+  @media (min-width: 768px) {
+    .teaser-image {
+      width: 50%;
+      margin-bottom: 0;
+    }
+  }
+  
+  .teaser-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 0.5rem;
+  }
+  
+  .teaser-content {
+    width: 100%;
+  }
+  
+  @media (min-width: 768px) {
+    .teaser-content {
+      width: 45%;
+    }
+  }
+  
+  .teaser-content h2 {
+    font-size: 1.875rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+    color: white;
+  }
+  
+  .teaser-content p {
+    color: #4b5563;
+  }
+  
+  .about-page {
+    background-color: #000;
+    padding: 3rem 0;
+  }
+  
+  .about-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1rem;
+  }
+  
+  .about-content h1 {
+    font-size: 1.875rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+    color: white;
+  }
+  
+  .about-content p {
+    color: #4b5563;
+  }
